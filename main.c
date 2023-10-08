@@ -3,20 +3,18 @@
 
 int main()
 {
-    int i,j,row;
+    int i,j, k;
+    printf("enter the number of rows:");
+    scanf("%d",&k);
 
-    printf(" enter the number of the row:");
-    scanf(" %d",&row ,i++);
-
-        for(i=1;i<=9;i++)
+    for(i=k;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
         {
-            for(j=1;j<=i;j++)
-            {
-                printf("*");
-            }
-            printf("\n");
 
-
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
